@@ -1,0 +1,609 @@
+thash@hydra:~$ curl http://localhost:9110
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 2.1999616e+08
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 2.3441408e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.57594646896e+09
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 0.21
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 7.0
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1024.0
+# HELP python_info Python platform information
+# TYPE python_info gauge
+python_info{implementation="CPython",major="2",minor="7",patchlevel="15+",version="2.7.15+"} 1.0
+# HELP sunpower_pvs_communication_interface_info Communications Interface Information
+# TYPE sunpower_pvs_communication_interface_info gauge
+sunpower_pvs_communication_interface_info{interface="wan",internet="down",sms="unreachable"} 1.0
+sunpower_pvs_communication_interface_info{interface="plc",internet="down",sms="unreachable"} 1.0
+sunpower_pvs_communication_interface_info{interface="sta0",internet="up",sms="reachable"} 1.0
+sunpower_pvs_communication_interface_info{interface="cell",internet="up",sms="reachable"} 1.0
+# HELP sunpower_pvs_grid_profile_info Grid Profile
+# TYPE sunpower_pvs_grid_profile_info gauge
+sunpower_pvs_grid_profile_info{id="816bf3302d337a42680b996227ddbc46abf9cd05",name="CA CPUC R21 Feb 2019 (F-W + V-W)",percent="100",status="success"} 1.0
+# HELP sunpower_pvs_supervisor_communication_errors_total Total number of communication errors
+# TYPE sunpower_pvs_supervisor_communication_errors_total counter
+sunpower_pvs_supervisor_communication_errors_total{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 1000.0
+# HELP sunpower_pvs_supervisor_cpu_loadavg CPU Load Average
+# TYPE sunpower_pvs_supervisor_cpu_loadavg gauge
+sunpower_pvs_supervisor_cpu_loadavg{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 0.3
+# HELP sunpower_pvs_supervisor_errors_total Total number of errors
+# TYPE sunpower_pvs_supervisor_errors_total counter
+sunpower_pvs_supervisor_errors_total{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 0.0
+# HELP sunpower_pvs_supervisor_flash_storage_available_bytes Storage available space (bytes)
+# TYPE sunpower_pvs_supervisor_flash_storage_available_bytes gauge
+sunpower_pvs_supervisor_flash_storage_available_bytes{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 8.1200128e+07
+# HELP sunpower_pvs_supervisor_mem_used_bytes Memory used (bytes)
+# TYPE sunpower_pvs_supervisor_mem_used_bytes gauge
+sunpower_pvs_supervisor_mem_used_bytes{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 5.787648e+07
+# HELP sunpower_pvs_supervisor_scan_time_seconds Scan time
+# TYPE sunpower_pvs_supervisor_scan_time_seconds gauge
+sunpower_pvs_supervisor_scan_time_seconds{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 1.0
+# HELP sunpower_pvs_supervisor_skipped_scans_total Skipped scans
+# TYPE sunpower_pvs_supervisor_skipped_scans_total counter
+sunpower_pvs_supervisor_skipped_scans_total{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 0.0
+# HELP sunpower_pvs_supervisor_untransmitted_events_total Untransmitted events
+# TYPE sunpower_pvs_supervisor_untransmitted_events_total counter
+sunpower_pvs_supervisor_untransmitted_events_total{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 53052.0
+# HELP sunpower_pvs_supervisor_uptime_seconds_total Uptime (seconds)
+# TYPE sunpower_pvs_supervisor_uptime_seconds_total counter
+sunpower_pvs_supervisor_uptime_seconds_total{device_id="ZT193085000549A1363",model="PV Supervisor PVS6",software_version="2019.8, Build 5249"} 21979.0
+# HELP sunpower_pvs_power_meter_ct_rated_current_amperes CT Rated Current
+# TYPE sunpower_pvs_power_meter_ct_rated_current_amperes gauge
+sunpower_pvs_power_meter_ct_rated_current_amperes{ct_rated_current="50",description="Power Meter PVS6M19301363p",device_id="PVS6M19301363p",mode="production",model="PVS6M0400p",port="",software_version="3000",type="PVS5-METER-P"} 50.0
+sunpower_pvs_power_meter_ct_rated_current_amperes{ct_rated_current="100",description="Power Meter PVS6M19301363c",device_id="PVS6M19301363c",mode="consumption",model="PVS6M0400c",port="",software_version="3000",type="PVS5-METER-C"} 100.0
+# HELP sunpower_pvs_power_meter_ac_frequency_hertz AC Frequency
+# TYPE sunpower_pvs_power_meter_ac_frequency_hertz gauge
+sunpower_pvs_power_meter_ac_frequency_hertz{ct_rated_current="50",description="Power Meter PVS6M19301363p",device_id="PVS6M19301363p",mode="production",model="PVS6M0400p",port="",software_version="3000",type="PVS5-METER-P"} 60.0
+sunpower_pvs_power_meter_ac_frequency_hertz{ct_rated_current="100",description="Power Meter PVS6M19301363c",device_id="PVS6M19301363c",mode="consumption",model="PVS6M0400c",port="",software_version="3000",type="PVS5-METER-C"} 60.0
+# HELP sunpower_pvs_power_meter_net_energy_watt_hours Total Net Energy
+# TYPE sunpower_pvs_power_meter_net_energy_watt_hours gauge
+sunpower_pvs_power_meter_net_energy_watt_hours{ct_rated_current="50",description="Power Meter PVS6M19301363p",device_id="PVS6M19301363p",mode="production",model="PVS6M0400p",port="",software_version="3000",type="PVS5-METER-P"} 0.0
+sunpower_pvs_power_meter_net_energy_watt_hours{ct_rated_current="100",description="Power Meter PVS6M19301363c",device_id="PVS6M19301363c",mode="consumption",model="PVS6M0400c",port="",software_version="3000",type="PVS5-METER-C"} 0.0
+# HELP sunpower_pvs_power_meter_average_real_power_watts Average real power
+# TYPE sunpower_pvs_power_meter_average_real_power_watts gauge
+sunpower_pvs_power_meter_average_real_power_watts{ct_rated_current="50",description="Power Meter PVS6M19301363p",device_id="PVS6M19301363p",mode="production",model="PVS6M0400p",port="",software_version="3000",type="PVS5-METER-P"} 0.0
+sunpower_pvs_power_meter_average_real_power_watts{ct_rated_current="100",description="Power Meter PVS6M19301363c",device_id="PVS6M19301363c",mode="consumption",model="PVS6M0400c",port="",software_version="3000",type="PVS5-METER-C"} 0.0
+# HELP sunpower_pvs_power_meter_average_reactive_power_volt_amperes_reactive Average reactive power
+# TYPE sunpower_pvs_power_meter_average_reactive_power_volt_amperes_reactive gauge
+sunpower_pvs_power_meter_average_reactive_power_volt_amperes_reactive{ct_rated_current="50",description="Power Meter PVS6M19301363p",device_id="PVS6M19301363p",mode="production",model="PVS6M0400p",port="",software_version="3000",type="PVS5-METER-P"} 0.0
+sunpower_pvs_power_meter_average_reactive_power_volt_amperes_reactive{ct_rated_current="100",description="Power Meter PVS6M19301363c",device_id="PVS6M19301363c",mode="consumption",model="PVS6M0400c",port="",software_version="3000",type="PVS5-METER-C"} 0.0
+# HELP sunpower_pvs_power_meter_average_apparent_power_volt_amperes_reactive Average reactive power
+# TYPE sunpower_pvs_power_meter_average_apparent_power_volt_amperes_reactive gauge
+sunpower_pvs_power_meter_average_apparent_power_volt_amperes_reactive{ct_rated_current="50",description="Power Meter PVS6M19301363p",device_id="PVS6M19301363p",mode="production",model="PVS6M0400p",port="",software_version="3000",type="PVS5-METER-P"} 0.0
+sunpower_pvs_power_meter_average_apparent_power_volt_amperes_reactive{ct_rated_current="100",description="Power Meter PVS6M19301363c",device_id="PVS6M19301363c",mode="consumption",model="PVS6M0400c",port="",software_version="3000",type="PVS5-METER-C"} 0.0
+# HELP sunpower_pvs_power_meter_power_factor_real_power_per_apparent_power Power Factor (Real Power / Apparent Power) ratio
+# TYPE sunpower_pvs_power_meter_power_factor_real_power_per_apparent_power gauge
+sunpower_pvs_power_meter_power_factor_real_power_per_apparent_power{ct_rated_current="50",description="Power Meter PVS6M19301363p",device_id="PVS6M19301363p",mode="production",model="PVS6M0400p",port="",software_version="3000",type="PVS5-METER-P"} 1.0
+sunpower_pvs_power_meter_power_factor_real_power_per_apparent_power{ct_rated_current="100",description="Power Meter PVS6M19301363c",device_id="PVS6M19301363c",mode="consumption",model="PVS6M0400c",port="",software_version="3000",type="PVS5-METER-C"} 0.0
+# HELP sunpower_pvs_inverter_ac_current_amperes AC Current
+# TYPE sunpower_pvs_inverter_ac_current_amperes gauge
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_current_amperes{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_inverter_ac_power_watts AC Power
+# TYPE sunpower_pvs_inverter_ac_power_watts gauge
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_power_watts{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_inverter_ac_voltage_volts AC Voltage
+# TYPE sunpower_pvs_inverter_ac_voltage_volts gauge
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_ac_voltage_volts{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_inverter_dc_current_amperes DC Current
+# TYPE sunpower_pvs_inverter_dc_current_amperes gauge
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_current_amperes{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_inverter_dc_power_watts DC Power
+# TYPE sunpower_pvs_inverter_dc_power_watts gauge
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_power_watts{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_inverter_dc_voltage_volts DC Voltage
+# TYPE sunpower_pvs_inverter_dc_voltage_volts gauge
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_dc_voltage_volts{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_inverter_operating_frequency_hertz Operating Frequency (hertz)
+# TYPE sunpower_pvs_inverter_operating_frequency_hertz gauge
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_operating_frequency_hertz{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_inverter_energy_total_watt_hours Total Energy
+# TYPE sunpower_pvs_inverter_energy_total_watt_hours gauge
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_energy_total_watt_hours{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_inverter_heatsink_temperature_celcius Heatsink Temperature
+# TYPE sunpower_pvs_inverter_heatsink_temperature_celcius gauge
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121927065275",device_id="E00121927065275",model="AC_Module_Type_E",module_id="P35M21297947",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121927065276",device_id="E00121927065276",model="AC_Module_Type_E",module_id="P35M21298032",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121927072358",device_id="E00121927072358",model="AC_Module_Type_E",module_id="P35M21297931",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121927073579",device_id="E00121927073579",model="AC_Module_Type_E",module_id="P35M21298002",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121927074107",device_id="E00121927074107",model="AC_Module_Type_E",module_id="P35M21297625",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121927079740",device_id="E00121927079740",model="AC_Module_Type_E",module_id="P35M21297968",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928108903",device_id="E00121928108903",model="AC_Module_Type_E",module_id="P37M21381130",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928108982",device_id="E00121928108982",model="AC_Module_Type_E",module_id="P37M21381053",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928109418",device_id="E00121928109418",model="AC_Module_Type_E",module_id="P37M21381065",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928111941",device_id="E00121928111941",model="AC_Module_Type_E",module_id="P37M21381066",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928128519",device_id="E00121928128519",model="AC_Module_Type_E",module_id="P37M21380850",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928128520",device_id="E00121928128520",model="AC_Module_Type_E",module_id="P37M21381101",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928128944",device_id="E00121928128944",model="AC_Module_Type_E",module_id="P37M21381215",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928129042",device_id="E00121928129042",model="AC_Module_Type_E",module_id="P37M21381260",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928129062",device_id="E00121928129062",model="AC_Module_Type_E",module_id="P37M21380912",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928131110",device_id="E00121928131110",model="AC_Module_Type_E",module_id="P37M21381152",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928132009",device_id="E00121928132009",model="AC_Module_Type_E",module_id="P37M21381068",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928135978",device_id="E00121928135978",model="AC_Module_Type_E",module_id="P37M21380981",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928136030",device_id="E00121928136030",model="AC_Module_Type_E",module_id="P37M21381177",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928136707",device_id="E00121928136707",model="AC_Module_Type_E",module_id="P37M21381326",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928136862",device_id="E00121928136862",model="AC_Module_Type_E",module_id="P37M21381308",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928136875",device_id="E00121928136875",model="AC_Module_Type_E",module_id="P37M21381126",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928138225",device_id="E00121928138225",model="AC_Module_Type_E",module_id="P36M21380561",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928142316",device_id="E00121928142316",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928142451",device_id="E00121928142451",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928145186",device_id="E00121928145186",model="AC_Module_Type_E",module_id="P37M21381406",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928147728",device_id="E00121928147728",model="AC_Module_Type_E",module_id="P37M21381468",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928148805",device_id="E00121928148805",model="AC_Module_Type_E",module_id="P37M21381488",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928155868",device_id="E00121928155868",model="AC_Module_Type_E",module_id="P37M21381420",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121928155901",device_id="E00121928155901",model="AC_Module_Type_E",module_id="P37M21381356",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935123656",device_id="E00121935123656",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935136521",device_id="E00121935136521",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935137408",device_id="E00121935137408",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935137435",device_id="E00121935137435",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935137438",device_id="E00121935137438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935140321",device_id="E00121935140321",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935148172",device_id="E00121935148172",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935148759",device_id="E00121935148759",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935149438",device_id="E00121935149438",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935149580",device_id="E00121935149580",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935150461",device_id="E00121935150461",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935151136",device_id="E00121935151136",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935151142",device_id="E00121935151142",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935151322",device_id="E00121935151322",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935151503",device_id="E00121935151503",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935153683",device_id="E00121935153683",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935153779",device_id="E00121935153779",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935154079",device_id="E00121935154079",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935154087",device_id="E00121935154087",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+sunpower_pvs_inverter_heatsink_temperature_celcius{description="Inverter E00121935154888",device_id="E00121935154888",model="AC_Module_Type_E",module_id="",port="",software_version="4.14.5",type="SOLARBRIDGE"} NaN
+# HELP sunpower_pvs_device_state Device (Component/Module) State
+# TYPE sunpower_pvs_device_state gauge
+sunpower_pvs_device_state{device_id="ZT193085000549A1363",device_type="PVS",model="PV Supervisor PVS6",software_version="2019.8, Build 5249",state="working",type=""} 1.0
+sunpower_pvs_device_state{device_id="PVS6M19301363p",device_type="Power Meter",model="PVS6M0400p",software_version="3000",state="working",type="PVS5-METER-P"} 1.0
+sunpower_pvs_device_state{device_id="PVS6M19301363c",device_type="Power Meter",model="PVS6M0400c",software_version="3000",state="working",type="PVS5-METER-C"} 1.0
+sunpower_pvs_device_state{device_id="E00121927065275",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121927065276",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121927072358",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121927073579",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121927074107",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121927079740",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928108903",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928108982",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928109418",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928111941",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928128519",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928128520",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928128944",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928129042",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928129062",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928131110",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928132009",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928135978",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928136030",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928136707",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928136862",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928136875",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928138225",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928142316",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928142451",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928145186",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928147728",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928148805",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928155868",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121928155901",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935123656",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935136521",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935137408",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935137435",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935137438",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935140321",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935148172",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935148759",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935149438",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935149580",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935150461",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935151136",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935151142",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935151322",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935151503",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935153683",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935153779",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935154079",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935154087",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
+sunpower_pvs_device_state{device_id="E00121935154888",device_type="Inverter",model="AC_Module_Type_E",software_version="4.14.5",state="error",type="SOLARBRIDGE"} 0.0
