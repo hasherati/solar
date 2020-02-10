@@ -8,14 +8,14 @@ Variations in my setup:
 Still working through some local issues but the first run is [here](https://github.com/hasherati/solar/blob/master/first-run).
 It's 7:18pm PST and the sun is down so no power is being generated.
 
-[Here](https://github.com/hasherati/solar/blob/master/second-run) is a run when the suns up.  Summing the lines that have sunpower_pvs_inverter_dc_power_watts will give you the total watts the system is generating.  In a one liner, it would be:
+[Here](https://github.com/hasherati/solar/blob/master/second-run) is a run when the suns up.  Summing the lines that have sunpower_pvs_inverter_dc_power_watts will give you the total watts the system is generating.
 
 To run all this, simply run sunpower-pvs-exporter and put it in the background:
 ```
 sunpower-pvs-exporter &
 ```
 
-Then:
+Then, in a one-liner, since I always look for excuses to use awk:
 
 ```
 curl http://localhost:9110 | grep sunpower_pvs_inverter_dc_power_watts | awk -F " " '{s+=$3} END {print s}'
